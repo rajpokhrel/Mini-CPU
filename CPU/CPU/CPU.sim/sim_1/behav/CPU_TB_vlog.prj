@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../Sources/2_1_Mux.v"
+verilog xil_defaultlib  "../../../../Sources/ALU.v"
+verilog xil_defaultlib  "../../../../Sources/ALU_Mux.v"
+verilog xil_defaultlib  "../../../../Sources/Adder.v"
+verilog xil_defaultlib  "../../../../Sources/CPU.v"
+verilog xil_defaultlib  "../../../../Sources/ControlUnit.v"
+verilog xil_defaultlib  "../../../../Sources/Data_Memory.v"
+verilog xil_defaultlib  "../../../../Sources/InstructionMemory.v"
+verilog xil_defaultlib  "../../../../Sources/Mem_Mux.v"
+verilog xil_defaultlib  "../../../../Sources/RegisterFile.v"
+verilog xil_defaultlib  "../../../../Sources/SignExtender.v"
+verilog xil_defaultlib  "../../../../Sources/CPU_TB.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

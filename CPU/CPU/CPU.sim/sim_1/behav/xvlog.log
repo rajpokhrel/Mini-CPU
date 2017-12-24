@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/2_1_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ALU_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Mem_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignImm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/CPU_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

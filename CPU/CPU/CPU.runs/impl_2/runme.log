@@ -1,0 +1,250 @@
+
+*** Running vivado
+    with args -log CPU.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CPU.tcl -notrace
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CPU.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 484.340 ; gain = 253.535
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.497 . Memory (MB): peak = 495.922 ; gain = 11.582
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 838094b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 29 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 838094b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 14afa2b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 134 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 14afa2b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 14afa2b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 991.637 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14afa2b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 991.637 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 109388827
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 991.637 ; gain = 0.000
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 991.637 ; gain = 507.297
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 5/CPU/CPU.runs/impl_2/CPU_opt.dcp' has been generated.
+Command: report_drc -file CPU_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 5/CPU/CPU.runs/impl_2/CPU_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 991.637 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6d6c59cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 991.637 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 991.637 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 317 I/O ports
+ while the target  device: 7z010 package: clg400, contains only 230 available user I/O. The target device has 230 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[32]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[33]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[34]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[35]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[36]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[37]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[38]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[39]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[40]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[41]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[42]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[43]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[44]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[45]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[46]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[47]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[48]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[49]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[50]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[51]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[52]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[53]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[54]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[55]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[56]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[57]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[58]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[59]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[60]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[61]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[62]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[63]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[64]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[65]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[66]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[67]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[68]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[69]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[70]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[71]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance EXE_MEM_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[100]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[101]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[102]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[103]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[104]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[105]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[106]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[107]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[108]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ID_EXE_OBUF[26]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6d6c59cd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.743 . Memory (MB): peak = 991.637 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 6d6c59cd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.743 . Memory (MB): peak = 991.637 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 6d6c59cd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.748 . Memory (MB): peak = 991.637 ; gain = 0.000
+37 Infos, 0 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 20 19:46:14 2017...

@@ -1,0 +1,17 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/CPU/CPU.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/2_1_Mux.v,1510835285,verilog,,,,Mux,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ALU.v,1510717163,verilog,,,,ALU,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ALU_Mux.v,1510718904,verilog,,,,ALU_Mux,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Adder.v,1510721527,verilog,,,,PC,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/CPU.v,1511832416,verilog,,,,CPU,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/CPU_TB.v,1510630105,verilog,,,,CPU_TB,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/ControlUnit.v,1511814868,verilog,,,,ControlUnit,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Data_Memory.v,1510718800,verilog,,,,Data_Memory,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/InstructionMemory.v,1511814314,verilog,,,,InstructionMemory,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/Mem_Mux.v,1510864204,verilog,,,,Mem_Mux,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/RegisterFile.v,1510875110,verilog,,,,RegisterFile,,,,,,,,
+C:/Users/rajpo/Desktop/This Semister/CMPEN 331/Lab 6/Sources/SignExtender.v,1509929230,verilog,,,,SignImm,,,,,,,,
